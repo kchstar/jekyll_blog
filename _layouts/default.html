@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jekyll website</title>
+    <link rel="stylesheet" href={{ "assets/scss/main.scss" }}>
+    <!-- <link rel="stylesheet" href={{"assets/css/color.css"}}> -->
+</head>
+<body>
+    <h1 class="title-area">
+        <!-- {{ content }} -->
+        <img src={{ "assets/images/log.png" | relative_url }} class="logo" alt=""> <!-- | relative_url -->
+
+        <h1 class="title">  {{ page.title }} </h1>
+        <p class="sub-title">  {{ page.description }}  </p>  
+
+    </div>
+    <h2>Most recent post</h2>
+    {{ content }}
+
+    <footer>
+        <p>Perhaps a bit too flashy for a footer, but it'll do. Social </p>
+    </footer>
+</body>
+</html>
+
